@@ -2,7 +2,7 @@
 
 ## Project is currently in progress 
 
-## Project summary: To construct an application based interactive platform where individuals assemble tools to meet the requesits of any project. 
+## Project summary: To construct an application based interactive platform where individuals assemble tools to meet the requisites of any project. 
 
 * 09/26/19 discussed the project's mission and what we would like to have achieved by the first version release
 
