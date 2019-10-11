@@ -1,22 +1,13 @@
 import React from "react";
-import "./GlobalStyles/App.css";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import HomePage from './Components/HomePage';
+import cn from 'classnames';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={cn('container')}>
+      <h1>App</h1>
+      <HomePage />
     </div>
   );
 }
