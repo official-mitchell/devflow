@@ -1,14 +1,18 @@
-import React from "react";
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import HomePage from './Components/HomePage';
-import cn from 'classnames';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "./Components/HomePage";
+import Navbar from "./Components/HomePage/Navbar";
+import Footer from "./Components/Footer";
+
+import cn from "classnames";
 
 function App() {
   return (
-    <div className={cn('container')}>
-      <h1>App</h1>
+    <React.Fragment>
+      <Navbar />
       <HomePage />
-    </div>
+      <Footer />
+    </React.Fragment>
   );
 }
 

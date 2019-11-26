@@ -1,0 +1,32 @@
+.buttonblue_text {
+  color: white;
+  //   transition: all 1s ease-in-out;
+}
+
+.buttonblue_div {
+  display: inline-block;
+  padding: 0.25rem 1.25rem;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-image: linear-gradient(90deg, #9527dd, #4e087c);
+  //   transition: all 1s ease-in-out;
+
+  &:hover {
+    background-image: linear-gradient(90deg, white, white);
+    transition: all 1s ease-out;
+    // .buttonblue_text {
+    //   color: #9527dd;
+    //   transition: all 1s ease-out;
+    // }
+  }
+}
+
+// .buttonblue_div:hover {
+//   background-image: linear-gradient(90deg, white, black);
+
+//   .buttonblue_text {
+//     color: #9527dd;
+//     transition: all 1s ease-out;
+//   }
+//   transition: all 1s ease-out;
+// }
