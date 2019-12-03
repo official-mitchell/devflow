@@ -1,3 +1,5 @@
+@import "../../scss/style.scss";
+
 .nav_logo_text {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -5,32 +7,40 @@
   display: inline-block;
 }
 
-.nav_logo {
-  // max-width: 10vw;
-  // margin-right: 1rem;
-  // margin-left: -3rem;
-  // margin-bottom: -3rem;
-  // margin-top: -2rem;
-  // @include xs() {
-  //   max-width: 10vw;
-  //   margin-right: 1rem;
-  //   margin-left: -3rem;
-  //   margin-bottom: -3rem;
-  //   margin-top: -2rem;
-  // }
-  // @include sm() {
-  //   max-width: 8vw;
-  // }
-  // @include md() {
-  //   max-width: 5.5vw;
-  // }
-  // @include lg() {
-  //   max-width: 3.5vw;
-  //   margin-right: 20px;
-  //   margin-bottom: 0rem;
-  //   margin-top: -0.7rem;
-  // }
+.nav_right {
+  @include md() {
+    display: inline;
+    position: absolute;
+    right: 0px;
+  }
 }
+
+// .nav_logo {
+// max-width: 10vw;
+// margin-right: 1rem;
+// margin-left: -3rem;
+// margin-bottom: -3rem;
+// margin-top: -2rem;
+// @include xs() {
+//   max-width: 10vw;
+//   margin-right: 1rem;
+//   margin-left: -3rem;
+//   margin-bottom: -3rem;
+//   margin-top: -2rem;
+// }
+// @include sm() {
+//   max-width: 8vw;
+// }
+// @include md() {
+//   max-width: 5.5vw;
+// }
+// @include lg() {
+//   max-width: 3.5vw;
+//   margin-right: 20px;
+//   margin-bottom: 0rem;
+//   margin-top: -0.7rem;
+// }
+// }
 
 // .navbar_container {
 //   .top {

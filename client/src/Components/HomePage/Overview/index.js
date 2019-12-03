@@ -3,14 +3,15 @@ import { Col, Row } from "reactstrap";
 
 import ButtonBlue from "../../Utilities/ButtonBlue/ButtonBlue.jsx";
 
+import image from "../../../Images/overviewgroup.png";
 import styles from "./overview.scss";
 
 const Overview = () => {
   return (
     <div className="overview_bg">
-      <div className="container text-center mt-5">
+      <div className="container text-center mt-5 overview_padding">
         <Row>
-          <Col className="text-left" xs="6">
+          <Col className="text-left" xs="12" md="6">
             <p className="overview_section_h">
               Get a roadmap to develop anything
             </p>
@@ -19,14 +20,13 @@ const Overview = () => {
               Work from frontend functionality to backend.
             </p>
           </Col>
-          <Col className="text-left" xs="6">
-            <h2 className="header pt-5">
-              Figure out how to build what you want
-            </h2>
-            <p className="header">Figure out how to build what you want</p>
+          <Col className="text-left" xs="12" md="6">
+            <Col xs="12">
+              <img className="overview_img" src={image} />
+            </Col>
           </Col>
         </Row>
-        <ButtonBlue text="Get Started" />
+        <ButtonBlue text="BUILD IT TOO" />
       </div>
     </div>
   );

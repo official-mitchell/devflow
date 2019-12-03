@@ -13,6 +13,7 @@ import {
   DropdownItem
 } from "reactstrap";
 
+import ButtonBlue from "../Utilities/ButtonBlue/ButtonBlue";
 import Logo from "../../Images/logo.svg";
 import styles from "./Navbar.scss";
 
@@ -25,18 +26,18 @@ const Example = props => {
     <div className="navbar_container">
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">
-          <img className="nav_logo" src={Logo} />
+          {/* <img className="nav_logo" src={Logo} /> */}
           <p className="nav_logo_text">Devflow</p>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="mr-auto float-right nav_right" navbar>
             <NavItem>
               <NavLink href="/components/">"social media links"</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                Explore Libraries
+              <NavLink href="/explore">
+                <ButtonBlue text="Explore Libraries" />
               </NavLink>
             </NavItem>
           </Nav>

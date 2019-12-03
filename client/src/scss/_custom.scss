@@ -1,7 +1,8 @@
-@import "variables";
+// @import "variables";
 @import "mixins";
-@import "../Components/Components";
-@import "../Views/Views";
+@import "colors";
+// @import "../Components/Components";
+// @import "../Views/Views";
 
 @-ms-viewport {
   width: device-width;

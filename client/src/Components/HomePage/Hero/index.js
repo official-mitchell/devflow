@@ -14,7 +14,7 @@ const Hero = () => {
         <p className="header text-white">
           Figure out how to build what you want
         </p>
-        <ButtonBlue text="text" />
+        <ButtonBlue text="GET STARTED FOR FREE" />
         <div className="hero_gif_bg">
           <p>Explainer GIF</p>
         </div>
