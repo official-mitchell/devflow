@@ -6,6 +6,18 @@
 
 # Changelog
 
+- ## 12/10/19:
+
+  - successfully mapped an array of cards to the CardList
+    - used props
+    - clarified keyword `key`
+  - worked toward implementing pagination on the exploreObjects page
+    - created a `Pagination` component
+  - difficulty integrating the pagination examples of connecting to an API with the local example of having our array being mapped across the pages.
+  - Examples using:
+    - [Countries]https://github.com/gladchinda/build-react-pagination-demo
+    - [Brad Traversy](https://github.com/bradtraversy/simple_react_pagination/blob/master/src/App.js)
+
 - ## 12/02/19:
   - Added react-router-dom and routing to home page and explore page and an error page.
   - Worked on styling fixes for the navbar and overview.
