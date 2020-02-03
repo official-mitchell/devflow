@@ -6,6 +6,22 @@
 
 # Changelog
 
+refer to react-build-pagination in fix
+
+## 02/03/20:
+
+- Working on dynamic routing for explore detail pages.
+- We have dynamic pages working now.
+- We left off with an array for trying map different properties to the explore details pages.
+
+## 01/08/20:
+
+- created our ExploredDetails page
+- created a new array
+- discussed UX experimentation and study methods and fundamentals
+- Discussed database approaches and why soemone might choose SQL over no-sql for a user-inputted platform
+- discussed getting 3rd party feedback from other developers—junior and senior
+
 ## 12/10/19:
 
 - successfully mapped an array of cards to the CardList

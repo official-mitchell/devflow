@@ -13,36 +13,6 @@ import ButtonBlue from "../Utilities/ButtonBlue/ButtonBlue.jsx";
 import styles from "./explore.scss";
 
 const Explore = () => {
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(8);
-
-  // useEffect(() => {
-  //   const fetchPosts = async () => {
-  //     setLoading(true);
-  //     const res = await exploreArray;
-  //     setPosts(res.data);
-  //     setLoading(false);
-  //   };
-
-  //   fetchPosts();
-  // }, []);
-
-  const res = exploreArray;
-  console.log(res);
-  setPosts(res);
-
-  // Get current posts
-  const indexOfLastPost = currentPage * postsPerPage;
-  console.log(indexOfLastPost);
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  console.log(indexOfFirstPost);
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-
-  // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber);
-
   return (
     <div className="explore_bg">
       <div className="container text-center">
@@ -64,15 +34,9 @@ const Explore = () => {
           </Col>
         </Row>
         <Row>
-          <CardList posts={currentPosts} loading={loading} />
+          <CardList />
         </Row>
-        <Row>
-          <Pagination
-            postsPerPage={postsPerPage}
-            totalPosts={posts.length}
-            paginate={paginate}
-          />
-        </Row>
+
         <Row className={cn(align.full, align.noMarginPad, align.allCenter)}>
           <Col xs="12" className={cn(align.allCenter, align.noMarginPad)}>
             <div className={cn(align.full, align.allCenter, align.noMarginPad)}>
@@ -91,6 +55,46 @@ const Explore = () => {
 };
 
 export default Explore;
+
+// const [posts, setPosts] = useState([]);
+// const [loading, setLoading] = useState(false);
+// const [currentPage, setCurrentPage] = useState(1);
+// const [postsPerPage] = useState(8);
+
+// useEffect(() => {
+//   const fetchPosts = async () => {
+//     setLoading(true);
+//     const res = await exploreArray;
+//     setPosts(res.data);
+//     setLoading(false);
+//   };
+
+//   fetchPosts();
+// }, []);
+
+// const res = exploreArray;
+// console.log(res);
+// setPosts(res);
+
+// Get current posts
+// const indexOfLastPost = currentPage * postsPerPage;
+// console.log(indexOfLastPost);
+// const indexOfFirstPost = indexOfLastPost - postsPerPage;
+// console.log(indexOfFirstPost);
+// const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+// Change page
+// const paginate = pageNumber => setCurrentPage(pageNumber);
+
+// <Row>
+//   <Pagination
+//     postsPerPage={postsPerPage}
+//     totalPosts={posts.length}
+//     paginate={paginate}
+//   />
+// </Row>;
+
+// <CardList posts={currentPosts} loading={loading} />;
 
 //  useEffect(() => {
 //   const fetchPosts = async () => {

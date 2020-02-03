@@ -8,7 +8,7 @@ import ButtonBlue from "../../Utilities/ButtonBlue/ButtonBlue.jsx";
 
 import styles from "./explorecard.scss";
 
-const ExploreCard = props => {
+const ExploreDetailsCard = props => {
   return (
     <Col className="my-2" xs="6" sm="4" md="3">
       <div className={cn("card_wrapper py-1 text-left")}>
@@ -20,15 +20,9 @@ const ExploreCard = props => {
           <hr />
           <p>{props.description}</p>
           <div className="card_link_right">
-            <Link to={props.link}>
+            <a href="/explore/details">
               <ButtonBlue text="More" />
-            </Link>
-            {/* <Link to={`/explore${props.id}`}>
-              <ButtonBlue text="More" />
-            </Link> */}
-            {/* <a href="/explore/details">
-              <ButtonBlue text="More" />
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
@@ -36,4 +30,4 @@ const ExploreCard = props => {
   );
 };
 
-export default ExploreCard;
+export default ExploreDetailsCard;

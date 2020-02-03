@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import HomePage from "./Components/HomePage";
 import Explore from "./Components/Explore";
+import ExploreDetails from "./Components/ExploreDetails";
 import Error from "./Components/Error";
 import Navbar from "./Components/HomePage/Navbar";
 import Footer from "./Components/Footer";
@@ -21,9 +22,12 @@ function App() {
       <Router>
         <div>
           {/* <Switch> */}
-          <Route exaxt path="/error" component={Error} />
+
+          {/* ### Change the error route to be default if one of the other pages is not exact */}
+          <Route path="/error" component={Error} />
           <Route exact path="/" component={HomePage} />
           <Route exact path="/explore" component={Explore} />
+          <Route exact path="/explore/details/:id" component={ExploreDetails} />
           {/* <Redirect to="/" /> */}
           {/* </Switch> */}
         </div>
